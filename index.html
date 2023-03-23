@@ -12,20 +12,16 @@
    <div id="container" class="header">
     <h1>My To Do List</h1>
     <input type="text" id="inputDisplay" placeholder="Add new...">
-    <span onclick="newElement()"
+    <span onclick="addItem()" value="Add To List"
     class="btn">Add</span>
+    <span onclick="removeItem()" 
+    class="btn1">Remove</span>
    </div>
    
    <ul id="myList">
-    <li>Hit the gym</li>
-    <li>Do laundry</li>
-    <li class="checked">Call Mum</li>
-    <li>Complete Stutern assignment</li>
-    <li>Meet hairstylist</li>
    </ul>
     </div>
 
-    <button class="end">Close</button>
     <script src="index.js"></script>
 </body>
 </html>

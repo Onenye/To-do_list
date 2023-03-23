@@ -18,33 +18,33 @@ ul li:hover{
     background: #ddd;
 }
 
-ul li .checked{
-    background-color: rgb(131, 124, 124);
-    color: #fff;
-    text-decoration: line-through;
-}
 
-ul li .checked::before{
-    position: absolute;
-    border-color: #fff;
-    top: 10px;
-    border-style: solid;
-    content: '';
-    width: 5px;
-}
 
 .btn{
     padding: 10px;
     float: left;
     font-size: 14px;
     border-radius: 1px;
-    color: grey;
+    color: #fff;
     background-color: rgb(101, 231, 101);
     text-align: center;
     width: 15%;
     cursor: pointer;
 
 }
+
+.btn1{
+    padding: 10px;
+    float: left;
+    font-size: 14px;
+    border-radius: 1px;
+    color: #fff;
+    background-color: rgb(70, 67, 67);
+    text-align: center;
+    width: 15%;
+    cursor: pointer;
+}
+
 
 .btn:hover{
     background-color: rgb(189, 181, 181);

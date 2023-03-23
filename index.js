@@ -1,9 +1,9 @@
-function newElement() {
+function addItem() {
     let li=document.createElement("LI");
     let inputValue=document.getElementById("inputDisplay").value ;
 
-    let t=document.createTextNode(inputValue);
-    li.appendChild(t);
+    let i=document.createTextNode(inputValue);
+    li.appendChild(i);
     if(inputValue===''){
         alert("You must write something");
     }else{
@@ -25,30 +25,31 @@ div.style.display="none";
     }
 }
 
-let myNodelist=document.getElementsByTagName("LI");
-let i;
-for (let i = 0; i < array.length; i++) {
-    let span=document.createElement("SPAN");
-    let txt=document.createTextNode("\u00D7");
-    span.className="close";
-    span.appendChild(txt);
-    myNodelist[i].appendChild(span);
+function removeItem() {
+let i=document.getElementById("myList");
+let inputValue=document.getElementById("inputDisplay");
+let txt= document.getElementById(inputDisplay.value);
+i.removeChild(txt);
 }
 
-let list=document.querySelector('ul');
-list.addEventListener('click', function(ev){
-    if(ev.target.tagName==='LI'){
-        ev.target.classList.toggle('checked')
-    }
-}, false)
+removeItem.addEventListener('click' , function(i) {
+    Node.parentNode.removeChild(node);
+})
+//let myNodelist=document.getElementsByTagName("LI");
+//let i;
+//for (let i = 0; i < array.length; i++) {
+    //let span=document.createElement("SPAN");
+    //let txt=document.createTextNode("\u00D7");
+    //span.className="close";
+    //span.appendChild(txt);
+    //myNodelist[i].appendChild(span);
+//}
 
-let close=document.getElementsByClassName('close');
+//let list=document.querySelector('ul');
+//list.addEventListener('click', function(ev){
+    //if(ev.target.tagName==='LI'){
+        //ev.target.classList.toggle('checked')
+   // }
+//}, false)
 
-for (let i = 0; i < array.length; i++) {
-    close[i].onclick=function(){
-        let div=this.parentElement;
-        div.style.display="none";
-    }
-    
-}
     
